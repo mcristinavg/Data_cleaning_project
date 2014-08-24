@@ -4,7 +4,8 @@ Data_final is a dataframe of 67 variables and 180 observations.
 30 subjects (“subject” variable) performed 6 activities (“activity” variable) and had different body accelerations and gravity recorded in 3 dimensions (x,y,z). I calculated the mean for all the gravity, acceleration measurements for each subject and each activity.
 
 
-Variables: each variable represents the mean for that all measurements for each subject in that activity
+Variables: each variable represents the mean for that all measurements for each subject in that activity.
+Units are radons/second
 
 [1] "subject"                   "activity"                 
  [3] "tBodyAcc_mean_X"           "tBodyAcc_mean_Y"          
