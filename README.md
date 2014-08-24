@@ -16,7 +16,7 @@ I set up the column "activity" assigning "walking" where "1" was, "walking_upsta
 
 "data2" dataframe was created by melting "extracted_data" dataframe. "subject" and "activity" were kept as id variables, measurement was dropped, all other variables (the ones including mean and std in their name) became measure variables.
 
-final dataframe called "data_final" was obtained from "data2" using dcast keeping "subject" and "activity" and calculating the mean for all other variables. This final dataframe is a tidy dataframe because it meets all requirements: each variable in 1 column, each observation in 1 row and the table only contains the means of previously identified variables containing mean() and std().
+Final dataframe called "data_final" was obtained from "data2" using dcast keeping "subject" and "activity" and calculating the mean for all other variables. This final dataframe is a tidy dataframe because it meets all requirements: each variable in 1 column, each observation in 1 row and the table only contains the means of previously identified variables containing mean() and std().
 
 The dataframe was saved in txt format using write.table(), sep=",", rownames=FALSE, colnames=TRUE. It contains 180 observations (30 subjects with 6 activities each) and mean measurements for 65 variables that were initially selected based on including "mean()" or "std()" in their name. The tidy dataframe can be read in R using read.table.
 
